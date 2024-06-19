@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ViPets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-container">
+      <section class="bar-grid-container">
+        <h1 class="bar-heading">HUNGER</h1>
+        <h1 class="bar-heading">ENERGY</h1>
+        <h1 class="bar-heading">HYGIENE</h1>
+        <h1 class="bar-heading">FUN</h1>
+        <div class="bar-grid-item">
+          <progress class="bar hunger-bar" value="100" max="100"></progress>
+        </div>
+        <div class="bar-grid-item">
+          <progress class="bar energy-bar" value="100" max="100"></progress>
+        </div>
+        <div class="bar-grid-item">
+          <progress class="bar hygiene-bar" value="100" max="100"></progress>
+        </div>
+        <div class="bar-grid-item">
+          <progress class="bar fun-bar" value="100" max="100"></progress>
+        </div>
+      </section>
+
+      <section class="screen-container">
+        <div class="screen-heading-container">
+          <h1 class="screen-heading"></h1>
+        </div>
+        <div class="pet-container">
+          <img class="smell-icon" src="assets/smell.svg" alt="smell" />
+          <img class="pet-icon" src="assets/happy.svg" alt="happy alien" />
+        </div>
+
+        <div class="poop-container"></div>
+        <div class="flush-overlay">
+          <img class="waves-icon" src="assets/waves.svg" alt="waves" />
+        </div>
+      </section>
+      <section class="button-container">
+        <button class="btn feed-btn">
+          <img class="btn-icon feed-icon" src="assets/cuttlery.svg" alt="cuttlery" />
+        </button>
+        <button class="btn nightmode-btn">
+          <img class="btn-icon nightmode-icon" src="assets/sun.svg" alt="sun" />
+        </button>
+        <button class="btn clean-btn">
+          <img class="btn-icon clean-icon" src="assets/droplet.svg" alt="droplet" />
+        </button>
+        <button class="btn play-btn">
+          <img class="btn-icon play-icon" src="assets/game-controller.svg" alt="controller" />
+        </button>
+        <button class="btn heal-btn">
+          <img class="btn-icon heal-icon" src="assets/first-aid-kit.svg" alt="first-aid-kit" />
+        </button>
+      </section>
+    </main>
+    <audio class="click-sound" src="sounds/click.mp3"></audio>
+    <audio class="error-sound" src="sounds/error.mp3"></audio>
+    <audio class="poop-sound" src="sounds/poop-sound.mp3"></audio>
+    <audio class="water-sound" src="sounds/water.mp3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
